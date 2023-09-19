@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿DÓNDE SE GUARDA?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="main">
+    <main >
+        <H2>¿ADÓNDE GUARDAS ESTOS ALIMENTOS?</H2>
+        <p class="instruccion">Hacé doble click sobre el alimento y llevalo hasta donde debe guardarse, en la heladera o en la alacena.</p>
+        <section>
+            <div class="frio" ondragover="onDragOver(event)" ondrop="onDrop(event);">
+                <h4>HELADERA</h4>
+            <picture class="heladera">
+                <img class="fridge" src="img/fridge (1).svg" alt="">
+            </picture>
+            <div class="mensaje-ok"></div>
+            </div>
+            <div class="natural" ondragover="onDragOver(event)" ondrop="onDrop(event);" >
+                <H4>ALACENA</H4>
+            <picture class="alacena">
+                <img src="img/cupboard.svg" alt="">
+            </picture>
+            <div class="mensaje-ok-ala"></div>
+            </div>
+        </section>
+        <div class="mensaje-bad"></div>
+        <article class="alimentos-cool" >
+            <p class="alimentos-frios" data-value="frio" id="carne" draggable="true" ondragstart="onDragStart(event)">CARNE</p>
+            <p class="alimentos-frios" data-value="frio" id="tomate" draggable="true" ondragstart="onDragStart(event)">TOMATE</p>
+            <p class="alimentos-frios" data-value="frio" id="lechuga" draggable="true" ondragstart="onDragStart(event)">LECHUGA</p>
+            <p class="alimentos-frios" data-value="frio" id="huevos" draggable="true" ondragstart="onDragStart(event)">HUEVOS</p>
+            <p class="alimentos-frios" data-value="frio" id="yogur" draggable="true" ondragstart="onDragStart(event)">YOGUR</p>
+        </article>
+        <article class="alimentos-hot">
+            <p class="alimentos-naturales" data-value="natural" id="lentejas" draggable="true" ondragstart="onDragStart(event)">LENTEJAS</p>
+            <p class="alimentos-naturales" data-value="natural" id="fideos" draggable="true" ondragstart="onDragStart(event)">FIDEOS</p>
+            <p class="alimentos-naturales" data-value="natural" id="arroz" draggable="true" ondragstart="onDragStart(event)">ARROZ</p>
+            <p class="alimentos-naturales" data-value="natural" id="mateCocido" draggable="true" ondragstart="onDragStart(event)">MATE COCIDO</p>
+            <p class="alimentos-naturales" data-value="natural" id="galletitas" draggable="true" ondragstart="onDragStart(event)">GALLETITAS</p>
+        </article>
+        <div id="msjFinal"></div>
+        <audio id="audio" src="comic010.mp3"></audio>
+        <audio id="audio1" src="aplausos.mp3"></audio>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

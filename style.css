@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+h2{
+    margin-top: 20px;
+}
+.instruccion{
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.frio, .natural{
+    width: 50vw;
+    height: 650px;
+    gap:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heladera, .alacena{
+    text-align: center;
+}
+.frio{
+    background-color: lightblue;
+}
+.natural{
+    background-color: rgb(236, 155, 89);
+}
+img{
+    width: 50%;
+}
+
+.alimentos-cool, .alimentos-hot{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+    font-weight:bold;
+}
+.alimentos-hot{
+    margin-bottom: 25px;
+}
+.mensaje-ok, .mensaje-ok-ala{
+    font-size: larger;
+    color:green;
+    font-weight: 600;
+}
+
+.mensaje-bad{
+    font-size: larger;
+    font-weight: 700;
+    color:red
+}
+
+#msjFinal{
+    display: none;
+    height: 150px;
+    width:250px;
+    border:2px solid rgb(61, 187, 15);
+    background-color: rgb(45, 214, 133);
+    color:white;
+    font-weight: 600;
+    font-size: 28px;
+    position:absolute;
+    text-align: center;
+    box-shadow: 1px 3px 10px 13px #fff;
+    padding-top:50px;
+    
+}
+
+    
+
+
